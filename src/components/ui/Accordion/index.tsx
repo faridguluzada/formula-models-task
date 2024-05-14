@@ -21,7 +21,7 @@ function Accordion() {
   const [selected, setSelected] = useState<number | null>(0);
   const [scrollHeight, setScrollHeight] = useState<string | number>(0);
 
-  const toggleHandler = (e: unknown, index: number) => {
+  const toggleHandler = (_: unknown, index: number) => {
     const contentEl = document.querySelector(".accordion__content");
 
     if (!contentEl) return;
