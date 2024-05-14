@@ -1,0 +1,30 @@
+@import "../../../scss/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid rgb(226, 225, 225);
+
+  &__text-box {
+    @include flex(0.4rem);
+  }
+
+  &__plus-box {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #3d7dff;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #3165ce;
+    }
+  }
+
+  &__plus {
+    padding: 0.5rem;
+  }
+}

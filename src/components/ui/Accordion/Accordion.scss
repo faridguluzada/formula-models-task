@@ -1,0 +1,76 @@
+@import "../../../scss/mixins";
+
+.formulas {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5e7ea;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0 1rem;
+
+    & > div {
+      @include flex(0.5rem);
+    }
+
+    .arrow_icon {
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-weight: 500;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f6f8fa;
+    overflow: hidden;
+
+    span {
+      text-transform: uppercase;
+      font-size: 1.875rem;
+    }
+  }
+
+  &__error-box {
+    @include flex(0.7rem);
+  }
+
+  &__date {
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: #e9ecf0;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.19rem;
+  }
+
+  &__content {
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+}
+
+.p-button {
+  background-color: transparent !important;
+  color: black;
+  padding: 0;
+  border: 0;
+}
+
+.p-autocomplete .p-autocomplete-multiple-container {
+  width: 100%;
+}

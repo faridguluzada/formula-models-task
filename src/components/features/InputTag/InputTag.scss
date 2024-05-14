@@ -1,0 +1,28 @@
+@import "../../../scss/mixins";
+
+// -Font sizes (px):
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+// Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128;
+
+.tag {
+  @include flex(0.125rem);
+  color: gray;
+
+  &__name {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  &__value {
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.p-autocomplete .p-autocomplete-multiple-container .p-autocomplete-token {
+  background-color: #f6f8fa;
+  border: 1px solid rgb(180, 180, 180);
+  padding: 0 0.5rem;
+}
